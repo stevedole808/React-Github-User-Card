@@ -8,7 +8,7 @@ const UserCard = (props) => {
 return (
         <div>
         <Card style={{border: ' solid 1px blue', padding: '1rem', margin: '1rem', backgroundColor: 'gold'}}>
-        <CardTitle>User Github Card</CardTitle>
+        <CardTitle style={{color: 'red'}}>User Github Card</CardTitle>
         <CardSubtitle>User Name: {props.card.login}</CardSubtitle>
             <CardImg src={props.card.avatar_url} />
             <CardBody>

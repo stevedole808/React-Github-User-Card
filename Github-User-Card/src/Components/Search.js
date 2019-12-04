@@ -8,10 +8,6 @@ export default class Search extends Component {
     }
   }
 
-  componentDidUpdate(prevState) {
-    if (prevState !== this.state.search) {}
-  }
-
   handleChange = e => {
     this.setState({
       search: e.target.value
@@ -29,11 +25,11 @@ export default class Search extends Component {
         <form onSubmit={this.handleSubmit}>
           <input
             type="text"
-            placeholder="Search Usernames..."
+            placeholder="Search Usernames"
             value={this.state.search}
             onChange={this.handleChange}
           />
-        <button>Search</button>
+        <button type='submit'>Search</button>
         </form>
       </div>
     )
